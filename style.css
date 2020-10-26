@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #dddddd;
+}
+
+/* index page */
+.search {
+  width: 600px;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search form {
+  margin-top: 30px;
+}
+
+.search form input[type='text'] {
+  display: block;
+  margin-top: 10px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+
+.search form input[type='text']:focus {
+  width: 100%;
+}
+
+.search form button {
+  background-color: #222;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin: 16px 8px !important;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search form button:hover {
+  background-color: #000000;
+}
+
+/* results page */
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: red;
+}
+
+.CD {
+  text-align: center;
+  width: 250px;
+  overflow: hidden;
+}
+
+.CD a img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.CD a img:hover {
+  filter: grayscale(0);
+}
+.CD p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CD page */
+
+.album {
+  width: 800px;
+  margin: 50px auto;
+}
+
+.album .artist_info {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.album .artist_info .artist_img {
+  float: left;
+  width: 25%;
+}
+
+.album .artist_info .artist_img img {
+  width: 100%;
+}
+
+.album .artist_info .info {
+  float: right;
+  width: 70%;
+  position: absolute;
+  width: 70%;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.album .artist_info .info h3 {
+  margin-top: 10px;
+}
+.album .artist_info .info p {
+  margin-top: 35px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background: #ccc;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
